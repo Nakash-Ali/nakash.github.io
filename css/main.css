@@ -1,12 +1,3 @@
-.nav {
-  display: inline;
-}
-
-.nav a{
-  font-size: 30px;
-  font-family: 'Abel', sans-serif;
-}
-
 body {
   background: url('background.jpg') no-repeat fixed center;
 }
@@ -28,10 +19,4 @@ h1 {
   text-align: center;
   font-family: 'Abel', sans-serif;
 }
-/* .jumbotron img {
-	position: relative;
-	left: 20px;
-	width: 150px;
-	height: 200px;
-}
-*/
+
