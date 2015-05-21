@@ -1,20 +1,9 @@
 .nav a{
   position: relative;
+  display: inline;
   top: 50px;
   font-size: 30px;
   font-family: 'Abel', sans-serif;
-}
-
-#about{
-  position:absolute;
-  top: 300px;
-  right: 50px;
-}
-
-#resume{
-  position:absolute;
-  top: 300px;
-  left: 50px; 
 }
 
 body {
