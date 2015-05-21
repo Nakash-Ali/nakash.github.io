@@ -1,9 +1,12 @@
 .nav {
   position: relative;
-  display: inline;
   top: 50px;
   font-size: 30px;
   font-family: 'Abel', sans-serif;
+}
+
+.nav li{
+display: inline;
 }
 
 body {
