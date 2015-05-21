@@ -1,0 +1,47 @@
+.links {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  float: right;
+  font-size: 30px;
+  font-family: 'Abel', sans-serif;
+}
+
+#home{
+  position: relative;
+  right: 50px;
+}
+
+.links li{
+display: inline;
+}
+
+body {
+  background: url('background.jpg') no-repeat fixed center;
+}
+
+.text p{
+  color: yellow;
+  font-size: 30px;  
+  position: relative;
+  top: 230px;
+  text-align: justify;
+  font-family: 'Abel', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 80px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  float: center;
+}
+
+.text{
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  right: 100px
+}
