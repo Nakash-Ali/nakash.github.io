@@ -3,6 +3,7 @@
   top: 50px;
   font-size: 30px;
   font-family: 'Abel', sans-serif;
+  float: right;
 }
 
 .nav li{
