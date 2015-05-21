@@ -4,6 +4,12 @@
   font-size: 30px;
   font-family: 'Abel', sans-serif;
   float: right;
+  
+}
+
+#about{
+  position: relative;
+  right: 20px;
 }
 
 .nav li{
