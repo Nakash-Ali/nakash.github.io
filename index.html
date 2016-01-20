@@ -20,9 +20,12 @@ $(document).ready(function() {
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 800) {
       $('#nav_bar').addClass('navbar-fixed-top');
+      $('#belowNav').addClass('padded');
+
     }
     if ($(window).scrollTop() < 800) {
       $('#nav_bar').removeClass('navbar-fixed-top');
+      $('#belowNav').removeClass('padded');
     }
   });
 });
@@ -56,6 +59,8 @@ $(document).ready(function() {
 
     </div><!-- /.navbar-collapse -->
 </nav>
+
+<div id="belowNav">
 
 <div id="aboutme">
     
@@ -142,6 +147,8 @@ $(document).ready(function() {
 <br/><br/>
 <div class="footer">
   <hr/>
+</div>
+
 </div>
   </body>
 </html>

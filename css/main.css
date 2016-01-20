@@ -76,3 +76,7 @@ h4 {
 .projectDiv h3{
   text-align: center;
 }
+
+.padded{
+  padding-top: 130px;
+}
