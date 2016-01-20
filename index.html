@@ -10,6 +10,23 @@
 
   <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
   <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 800) {
+      $('#nav_bar').addClass('navbar-fixed-top');
+    }
+    if ($(window).scrollTop() < 800) {
+      $('#nav_bar').removeClass('navbar-fixed-top');
+    }
+  });
+});
+  </script>
     
   </head>
 
@@ -28,7 +45,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-default">
+  <nav id="nav_bar" class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navlinkdiv">
@@ -38,7 +55,6 @@
       </div>
 
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
 
 <div id="aboutme">
