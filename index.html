@@ -5,26 +5,99 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
     
   </head>
 
   <body>
-    <div class="nav">
-        <ul>
-		  <li id="about"><a href="aboutme.html">About Me</a></li>
-          <li><a href="resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+    <div class="jumbotron">
+      <img id="background" src="jumbroton.jpg">
     </div>
-	
-	<h1>Nakash Ali</h1>	
+
+  <div id="intro">	
+   <h4>Nakash Ali</h4>	
 
     <div class="text">
 		<p>Software Developer</p>
 		<p>Passionate about Technology, Physics and Service</p>
 		<p>Here to serve you and the world</p>
     </div>
+  </div>
 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navlinkdiv">
+        <a class="navlink btn smoothScroll" role="button" href="#aboutMeHeading">About Me</a>
+        <a class="navlink btn smoothScroll" role="button" href="myprojects.html" target="_blank">My Projects</a>
+        <a class="navlink btn smoothScroll" role="button" href="resume.pdf" target="_blank">Resume</a>
+      </div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="aboutme">
+    
+    <div class="container">
+
+      <h3 id="aboutMeHeading" class="subHeadings">
+      About Me
+      </h3><br/>
+
+      <p>I aspire to fuse technology and innovation in order to improve the quality of life of people living in   unacceptable circumstances in developing
+      and war-torn countries. I am currently pursuing a Bachelor's degree in Computer Engineering at the University of  Waterloo. I have a passion for
+      software development and have thorough experience with object oriented programming, in C++, C# and Java, UI design  and gate-level circuit design
+      and web development skills in HTML5, CSS and JavaScript. I have previously worked as a program developer at   Carleton University and in multiple
+      roles at Diamond Trust Bank, Kenya.
+      </p>
+
+      <hr/>
+
+      <p>
+      Apart from software development, hardware design and humanitarian development, I also possess great interests in  other areas. One of these is sports.
+      Not only do I play table-tennis, soccer, cricket and basketball, I am also fond of indulging myself in the world of   soccer by regularly playing FIFA
+      video games and supporting Liverpool Football Club.
+      </p>
+
+      <hr/>
+      <p>
+      If I can be of any help to you, or if you seek to converse with me about intellectual topics or mutual interest,  please do not hesitate to contact me.
+      </p>
+  </div>
+</div>
+
+<br>
+<div id="myprojectsDiv">
+  <div class="container">
+
+      <h3 id="myprojects" class="subHeadings">
+      My Projects
+      </h3><br/>
+
+        <div class="row">
+          <div class="col-xs-4 projectDiv">
+            <h3>Price Estimator</h3>
+            <hr>
+            Price Estimator is a web application that estimates the prices of used products based on data collected from e-shopping servers regarding similar products. This application was made using Ruby on Rails with the front-end developed using HTML5, CSS, Javascript, jQuery and Bootstrap. This application was developed by a team of three developers.
+          </div>
+            <div class="col-xs-4 projectDiv">
+            <h3>Fit & Focused</h3>
+            <hr>
+            Fit & Focused is an Android application that includes a pedometer which keeps count of one's steps, and a path finding application which helps the user get from one spot to another in a building, with live directions. This application uses an Android device's sensors to collect its information. The application was developed in Eclipse with Java.
+          </div>
+        </div>
+
+  </div>
+</div>
+
+<br/><br/>
+<div class="footer">
+  <hr/>
+</div>
   </body>
 </html>
