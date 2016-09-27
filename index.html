@@ -1,154 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<head>
 
-  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript">
-$(document).ready(function() {
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the 
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 800) {
-      $('#nav_bar').addClass('navbar-fixed-top');
-      $('#belowNav').addClass('padded');
+    <title>Nakash Ali Babwany</title>
 
-    }
-    if ($(window).scrollTop() < 800) {
-      $('#nav_bar').removeClass('navbar-fixed-top');
-      $('#belowNav').removeClass('padded');
-    }
-  });
-});
-  </script>
-    
-  </head>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <body>
-    <div class="jumbotron">
-      <img id="background" src="jumbroton.jpg">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Nakash Ali Babwany</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="resume.pdf">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Nakash Ali Babwany</h1>
+                <p id="subHeading">Software Developer <br/> BAS Computer Engineering - University of Waterloo</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">What Do I Stand For?</h2>
+                    <hr class="light">
+                    <p class="text-faded">I aspire to fuse technology and innovation in order to improve the quality of life of people living in   unacceptable circumstances in developing
+                    and war-torn countries. I am currently pursuing a Bachelor's degree in Computer Engineering at the University of  Waterloo. I have a passion for
+                    software development and have thorough experience with object oriented programming, in C++, C# and Java, UI design  and gate-level circuit design
+                    and web development skills in HTML5, CSS and JavaScript. I have previously worked as a program developer at   Carleton University and in multiple
+                    roles at Diamond Trust Bank, Kenya.</p>
+                    <hr/>
+
+                    <p class="text-faded">
+                    Apart from software development, hardware design and humanitarian development, I also possess great interests               in  other areas. One of these is sports.
+                    Not only do I play table-tennis, soccer, cricket and basketball, I am also fond of indulging myself in the world            of   soccer by regularly playing FIFA
+                    video games and supporting Liverpool Football Club.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <section class="no-padding" id="portfolio">
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h1>Some Projects I Have Worked On</h1>
+            </div>
+        </div>
+    </aside>
+        <ul class="thumbnails" id="hover-cap-4col">
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    <div class="caption">
+        <h2>SpeakBack</h2>
+        <hr/>
+        <p>SpeakBack is a speech analyzer I developed using Ruby on Rails. It is a web application which
+        records speech and returns a phoetic analysis, along with speech recognition, of the recorded speech
+        </p>
+      <a role="button" class="btn btn-danger" data-toggle="modal" data-target="#speakBackModal">Details</a>  
     </div>
-
-  <div id="intro">	
-   <h4>Nakash Ali</h4>	
-
-    <div class="text">
-		<p>Software Developer</p>
-		<p>Passionate about Technology, Physics and Service</p>
-		<p>Here to serve you and the world</p>
-    </div>
+    <img src="img/speakback1.png" alt="ALT NAME">
   </div>
-
-  <nav id="nav_bar" class="navbar navbar-default">
-    <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navlinkdiv">
-        <a class="navlink btn smoothScroll" role="button" href="#aboutMeHeading">About Me</a>
-        <a class="navlink btn smoothScroll" role="button" href="#myprojects" target="_blank">My Projects</a>
-        <a class="navlink btn smoothScroll" role="button" href="resume.pdf" target="_blank">Resume</a>
+  
+</li>
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    
+    <div class="caption">
+        <h2>Price Estimator</h2>
+        <hr/>
+        <p>Price Estimator is a web application that estimates the prices of used products based on data collected from e-shopping servers regarding similar products. This application was made using Ruby on Rails. with the front-end developed using HTML5, CSS, Javascript, jQuery and Bootstrap. This application was developed by a team of three developers.
+        </p>
+    </div>
+    <img src="img/priceEstimator.png" width="581px" height="350px">
+  </div>
+</li>
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    
+    <div class="caption">
+      <h2>UHAI Mombasa</h2>
+        <hr/>
+        <p>UHAI is a community service group, that I co-founded, which aims to improve the quality of life of the people living in the rural areas of Kenya. UHAI's greatest achievement was providing Pungu Primary School with access to clean water, which was a commodity the school had been lacking. UHAI also held entertainment events for children in orphanages, along with other fundraising activities to give back to the community.
+        </p>
+      <a role="button" class="btn btn-danger" href="http://www.uhaimombasa.com">Visit Uhai</a>  
+      <a role="button" class="btn btn-danger" href="http://www.coastweek.com/3642-extra-03.htm">Uhai in the news!</a>  
+    </div>
+    <img src="img/uhai.png">
+  </div>
+</li>
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    
+    <div class="caption">
+        <h2>IVCCal UI Design</h2>
+        <hr/>
+        <p>IVCCal is an application developed to schedule volunteering duties at my local community center. I developed the user interface for IVCCal, which primarily included an interactive calendar, using Groovy on Grails along with HTML 5, CSS, jQuery, Javascript and Bootstrap.
+        </p>
+    </div>
+    <img src="img/ivccal.png">
+  </div>
+</li>
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    
+    <div class="caption">
+        <h2>Fit & Focused</h2>
+        <hr/>
+        <p>Fit & Focused is an Android application that includes a pedometer which keeps count of one's steps, and a path finding application which helps the user get from one spot to another in a building, with live directions. This application uses an Android device's sensors to collect its information. The application was developed in Eclipse with Java.</p>
+    </div>
+    <img src="img/pedometer.jpg">
+  </div>
+</li>
+<li class="col-lg-4 lead ">
+  <div class="thumbnail">
+    
+    <div class="caption">
+      <div class="caption-inner">
+        <h2>Find the Number</h2>
+        <hr/>
+        <p>Find the Number is a program I developed in C# in order to look for a number in a file. It was one of
+        the initial programs I  developed using an OOP language. The program uses I/O Streams to read and write a file which has numbers stored. It also allows the user to search for a number in the file.
+        </p>
+        <a href="https://github.com/Nakash-Ali/Number-Searcher" role="button" class="btn btn-danger">View on GitHub</a> 
+      
       </div>
+    </div>
+    <img src="img/number.png">
+  </div>
+</li>
+</ul>
+    </section>
 
-    </div><!-- /.navbar-collapse -->
-</nav>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:nakash.babwany@gmail.com">nakash.babwany@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div id="belowNav">
-
-<div id="aboutme">
-    
-    <div class="container">
-
-      <h3 id="aboutMeHeading" class="subHeadings">
-      About Me
-      </h3><br/>
-
-      <p>I aspire to fuse technology and innovation in order to improve the quality of life of people living in   unacceptable circumstances in developing
-      and war-torn countries. I am currently pursuing a Bachelor's degree in Computer Engineering at the University of  Waterloo. I have a passion for
-      software development and have thorough experience with object oriented programming, in C++, C# and Java, UI design  and gate-level circuit design
-      and web development skills in HTML5, CSS and JavaScript. I have previously worked as a program developer at   Carleton University and in multiple
-      roles at Diamond Trust Bank, Kenya.
-      </p>
-
-      <hr/>
-
-      <p>
-      Apart from software development, hardware design and humanitarian development, I also possess great interests in  other areas. One of these is sports.
-      Not only do I play table-tennis, soccer, cricket and basketball, I am also fond of indulging myself in the world of   soccer by regularly playing FIFA
-      video games and supporting Liverpool Football Club.
-      </p>
-
-      <hr/>
-      <p>
-      If I can be of any help to you, or if you seek to converse with me about intellectual topics or mutual interest,  please do not hesitate to contact me.
-      </p>
+<!-- Modal -->
+<div class="modal fade" id="speakBackModal" width="70%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h1 class="modal-title" id="myModalLabel">SpeakBack</h1>
+        <h4>Speech analyzer developed using Ruby on Rails</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/speakback2.png" / >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<br>
-<div id="myprojectsDiv">
-  <div class="container">
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-      <h3 id="myprojects" class="subHeadings">
-      My Projects
-      </h3><br/>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-        <div class="row">
-          <div class="col-xs-4 projectDiv">
-            <h3>Price Estimator</h3>
-            <hr>
-            Price Estimator is a web application that estimates the prices of used products based on data collected from e-shopping servers regarding similar products. This application was made using Ruby on Rails with the front-end developed using HTML5, CSS, Javascript, jQuery and Bootstrap. This application was developed by a team of three developers.
-            <hr/><br/><br/><br/>
-          </div>
-            <div class="col-xs-4 projectDiv">
-            <h3>Fit & Focused</h3>
-            <hr>
-            Fit & Focused is an Android application that includes a pedometer which keeps count of one's steps, and a path finding application which helps the user get from one spot to another in a building, with live directions. This application uses an Android device's sensors to collect its information. The application was developed in Eclipse with Java.
-            <hr/><br/><br/><br/>
-          </div>
-            <div class="col-xs-4 projectDiv">
-            <h3>UHAI Mombasa</h3>
-            <hr>
-            UHAI is a community service group, that I co-founded, which aims to improve the quality of life of the people living in the rural areas of Kenya. UHAI's greatest achievement was providing Pungu Primary School with access to clean water, which was a commodity the school had been lacking. UHAI also held entertainment events for children in orphanages, along with other fundraising activities to give back to the community. <hr> Read more at <a href="http://uhaimombasa.com">uhaimombasa.com</a>
-          </div>
-        </div>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-                <div class="row">
-          <div class="col-xs-4 projectDiv">
-            <h3>Calendar UI - IVCCal</h3>
-            <hr>
-            IVCCal is an application developed to schedule volunteering duties at my local community center. I developed the user interface for IVCCal, which primarily included an interactive calendar, using Groovy on Grails along with HTML 5, CSS, jQuery, Javascript and Bootstrap.
-            <hr/><br/><br/>
-          </div>
-            <div class="col-xs-4 projectDiv">
-            <h3>Euler's Calculator</h3>
-            <hr>
-            Euler's Calculator is a Windows calculator which I designed in C++ in order to gain technological assistance for my Calculus course. The calculator can approximate values of a function given its differential equation, shortening a lengthy manual process to a very quick automated process, providing a result within a fraction of a second.
-            <hr/>
-          </div>
-            <div class="col-xs-4 projectDiv">
-            <h3>Never Back Asleep</h3>
-            <hr>
-            Never Back Asleep is an alarm clock application that I am currently developing using Java and Android Studio. This alarm clock has a special functionality of urgent alarms which are not dismissed until a certain number of steps are taken by the user.
-            <hr/><br/><br/><br/>
-          </div>
-        </div>
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/main.js"></script>
 
-  </div>
-</div>
+</body>
 
-<br/><br/>
-<div class="footer">
-  <hr/>
-</div>
-
-</div>
-  </body>
 </html>
